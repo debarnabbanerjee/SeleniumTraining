@@ -1,0 +1,82 @@
+Reference website :- http://www.softwaretestinghelp.com/selenium-grid-selenium-tutorial-29
+
+d:
+cd D:\BACKUPS\jars_2.45
+
+######## For starting up Hub
+java -jar selenium-server-standalone-2.45.0.jar -role hub
+The hub will use the port 4444 by default
+http://localhost:4444/grid/console    
+
+######## Setting up the node 
+By default WebDriver and RC would be dere with 5 chromes , 5 firefox and one IE with default port as 5555
+java -jar selenium-server-standalone-2.45.0.jar -role node -hub http://localhost:4444/grid/register -port 5556
+
+One IE browser in the node
+java -jar selenium-server-standalone-2.45.0.jar -role node -hub http://localhost:4444/grid/register -port 5556 -browser browserName=iexplore
+
+
+@@ java -jar selenium-server-standalone-2.45.0.jar -role node -hub http://localhost:4444/grid/register -port 5556 -browser browserName=iexplore,maxInstances=3 -maxSession=2
+
+One firefox browser in the node
+java -jar selenium-server-standalone-2.45.0.jar -role node -hub http://localhost:4444/grid/register -port 5556 -browser browserName=firefox
+
+One chrome browser in the node
+java -jar selenium-server-standalone-2.45.0.jar -role node -hub http://localhost:4444/grid/register -port 5556 -browser browserName=chrome
+
+1 IE 1 firefox 1 Chrome
+java -jar selenium-server-standalone-2.45.0.jar -role node -hub http://localhost:4444/grid/register -port 5556 -browser browserName=chrome  -browser browserName=firefox  -browser browserName=iexplore
+
+## maxInstance is used to limit the number of browser initialization in a node.
+## maxSession is used to configure how many number of browsers can be used parallel in the remote system.
+
+3 chrome and 3 firefox browsers and 3 IE browsers with max instance and max session.
+java -jar selenium-server-standalone-2.45.0.jar -role node -hub http://localhost:4444/grid/register -port 5556  -browser browserName=firefox,maxInstances=5  -maxSession 2  -browser browserName=iexplore,maxInstances=3  -maxSession 2  -browser browserName=chrome,maxInstances=3  -maxSession 2 -Dwebdriver.chrome.driver=./chromedriver.exe 
+
+
+
+
+final one 
+java -jar selenium-server-standalone-2.45.0.jar -role node -hub http://localhost:4444/grid/register -port 5556  -browser browserName=firefox,maxInstances=5  -maxSession 2  -browser browserName=iexplore,maxInstances=3  -maxSession 2  -browser browserName=chrome,maxInstances=3  -maxSession 2 -Dwebdriver.chrome.driver=./chromedriver.exe  -Dwebdriver.ie.driver=.\IEDriverServer.exe
+
+
+java -jar selenium-server-standalone-2.45.0.jar -role node -hub http://localhost:4444/grid/register -port 5556  -browser browserName=firefox,maxInstances=5  -maxSession 3  -browser browserName=iexplore,maxInstances=3  -maxSession 3  -Dwebdriver.ie.driver=.\IEDriverServer.exe  -browser browserName=chrome,maxInstances=3  -maxSession 3 -Dwebdriver.chrome.driver=./chromedriver.exe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

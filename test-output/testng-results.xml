@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="My TestNG suite" duration-ms="38821" started-at="2015-05-07T06:41:24Z" finished-at="2015-05-07T06:42:03Z">
+    <groups>
+    </groups>
+    <test name="GRID TEST WITH SERIAL EXECTION WITH BROWSER FF" duration-ms="38821" started-at="2015-05-07T06:41:24Z" finished-at="2015-05-07T06:42:03Z">
+      <class name="TrainingDay4.SeleniumGrid">
+        <test-method status="PASS" signature="checkgmailEmail(java.lang.String)[pri:0, instance:TrainingDay4.SeleniumGrid@1ad4242]" name="checkgmailEmail" duration-ms="38805" started-at="2015-05-07T12:11:24Z" data-provider="getData" finished-at="2015-05-07T12:12:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkgmailEmail -->
+        <test-method status="PASS" signature="checkgmailEmail(java.lang.String)[pri:0, instance:TrainingDay4.SeleniumGrid@1ad4242]" name="checkgmailEmail" duration-ms="21853" started-at="2015-05-07T12:11:24Z" data-provider="getData" finished-at="2015-05-07T12:11:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkgmailEmail -->
+        <test-method status="PASS" signature="checkgmailEmail(java.lang.String)[pri:0, instance:TrainingDay4.SeleniumGrid@1ad4242]" name="checkgmailEmail" duration-ms="18500" started-at="2015-05-07T12:11:24Z" data-provider="getData" finished-at="2015-05-07T12:11:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ie]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkgmailEmail -->
+      </class> <!-- TrainingDay4.SeleniumGrid -->
+    </test> <!-- GRID TEST WITH SERIAL EXECTION WITH BROWSER FF -->
+  </suite> <!-- My TestNG suite -->
+</testng-results>

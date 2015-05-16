@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>MySampleWebPage</title>
+
+<style>
+
+body {
+    background-color: linen;
+}
+#test{
+        display:none
+}	
+span {
+    color: rgb(0,0,255);
+}
+th,td,tr {
+	text-align: center;
+}
+td {
+    padding: 20px;
+}
+th {
+    background-color: green;
+    color: white;
+}
+table {
+	
+}
+</style>
+
+<script type="text/javascript"> 
+var cnt = 2;
+function generateFullName()
+    {
+		//alert(cnt-1);	
+        document.getElementById("fullname"+(cnt-1)).value = 
+        document.getElementById("firstname"+(cnt-1)).value + ' ' + 
+        document.getElementById("lastname"+(cnt-1)).value;
+	
+    }
+	
+</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+
+       $('span').on('mouseenter',function () {
+           $('#test').show();
+           $(this).css({
+               "text-decoration": "underline",
+			   
+           });
+       }).on('mouseleave', function () {
+           ;
+           $(this).css({
+               "text-decoration": ''
+           });
+       }); 
+       $('#test').on('mouseenter',function () {
+           ;
+           $(this).css({
+               "text-decoration": "underline",
+			   
+           });
+       }).on('mouseleave', function () {
+           $('#test').hide();
+           $(this).css({
+               "text-decoration": ''
+           });
+       });;   
+	   
+	 // var cnt = 2;
+		$('#test').click(function(){
+		//$('#table1 tr').last().after('<tr><td></td><td><input type="text" name="txtbx'+cnt+'" value="'+cnt+'" style = "text-align: center"></td><td><input type="text" id = "firstname'+cnt+'" name="txtbx'+cnt+'" value="" style = "text-align: center"></td><td><input type="text" id = "lastname'+cnt+'" name="txtbx'+cnt+'" value="" style = "text-align: center" onkeyup="generateFullName()"></td><td><input type="text" id = "fullname'+cnt+'" name="txtbx'+cnt+'" style = "text-align: center" value="" ></td></tr>');
+		$('#table1 tr').last().after('<tr><td></td><td><input type="text" id = "index'+cnt+'" name="txtbx'+cnt+'" value="" style = "text-align: center"></td><td><input type="text" id = "firstname'+cnt+'" name="txtbx'+cnt+'" value="" style = "text-align: center"></td><td><input type="text" id = "lastname'+cnt+'" name="txtbx'+cnt+'" value="" style = "text-align: center" onkeyup="generateFullName()"></td><td><input type="text" id = "fullname'+cnt+'" name="txtbx'+cnt+'" style = "text-align: center" value="" ></td></tr>');
+		cnt++;
+		}); 
+   }); 
+
+ </script>
+
+
+
+</head>
+
+<body>
+<div id="addGear">
+<!-- <img src="gearButton.jpg" alt="addGear" align="middle"> --> 
+<!-- <img src="C:\Users\175524\Desktop\gearButton.jpg" alt ="addGear"> -->
+</div>
+ 
+<table id ="table1" border = 2>
+<th width=80><span>Add</span></th><th width=80>Index</th><th width=100%>FirstName</th><th width=width=100%>LastName</th><th width=100%>FullName</th>
+
+<tr><td><img id="test" src="gearButton.jpg"/></td><td>1</td><td>James</td><td>Bond</td><td>James Bond</td></tr>
+
+<!--
+<tr><td></td><td>02</td><td>Charles</td><td>Dickenson</td><td>Charles Dickenson</td></tr>
+<tr><td></td><td>03</td><td>Bob</td><td>James</td><td>Bob James</td></tr>
+<tr><td></td><td>04</td><td>Joe</td><td>Satriani</td><td>Joe Satriani</td></tr>
+<tr><td></td><td>05</td><td>Bob</td><td>Wulmaer</td><td>Bob Wulmaer</td></tr>
+<tr><td></td><td>06</td><td>John</td><td>Mayer</td><td>John Mayer</td></tr>
+
+<tr><td></td><td>07</td><td>James1</td><td>Bond1</td><td>James1 Bond1</td></tr>
+<tr><td></td><td>07</td><td>Charles1</td><td>Dickenson1</td><td>Charles1 Dickenson1</td></tr>
+<tr><td></td><td>06</td><td>Bob1</td><td>James1</td><td>Bob1 James1</td></tr>
+<tr><td></td><td>10</td><td>Joe1</td><td>Satriani1</td><td>Joe1 Satriani1</td></tr>
+<tr><td></td><td>10</td><td>Bob1</td><td>Wulmaer1</td><td>Bob1 Wulmaer1</td></tr>
+<tr><td></td><td>10</td><td>John1</td><td>Mayer1</td><td>John1 Mayer1</td></tr>
+-->
+</table>
+</body>
+</html>
+

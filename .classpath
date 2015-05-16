@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/apache-mime4j-0.6.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/bsh-1.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/commons-exec-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/commons-jxpath-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/commons-lang3-3.3.2.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/cssparser-0.9.14.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/guava-18.0.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/hamcrest-library-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/htmlunit-2.15.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/htmlunit-core-js-2.15.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/httpclient-4.3.6.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/httpcore-4.3.3.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/httpmime-4.3.6.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/ini4j-0.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/jcommander-1.29.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/jetty-websocket-8.1.8.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/jna-3.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/jna-platform-3.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/junit-dep-4.11.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/nekohtml-1.9.21.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/netty-3.5.7.Final.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/operadriver-1.5.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/phantomjsdriver-1.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/protobuf-java-2.4.1.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/selenium-java-2.45.0.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/selenium-java-2.45.0-srcs.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/serializer-2.7.1.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/testng-6.8.5.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/xalan-2.7.1.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="D:/selenium training/seleniumJars/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="C:/Users/175524/Downloads/log4j-1.2.15.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

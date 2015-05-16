@@ -1,0 +1,123 @@
+
+// ********************************  AUTOIT EXAMPLE *******************************
+		
+		/*WebDriver driver = new FirefoxDriver();
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);	
+		try{
+			driver.get("https://aspire.cognizant.com/");
+		}catch(Exception e){			
+			System.out.println("Page stopped properly.");
+			Runtime.getRuntime().exec("C:\\Users\\175524\\Desktop\\Authentication.exe");			
+		}		
+		System.out.println("Outside catch block"); 	
+		driver.quit();*/
+		
+		
+// *******************************  creating a custom function to select from a date picker *************************************************************
+
+				String d = "10/15/2016"; // the date which needs to be selected in cleartrip website
+				String months[] ={"January","February","March","April","May","June","July","August","September","October","November","December"};
+				
+				SimpleDateFormat df = new SimpleDateFormat("MM/dd/yyyy");
+				Date myDate = df.parse(d);
+				Calendar cal = Calendar.getInstance();
+				cal.setTime(myDate);
+				
+				int day = cal.get(Calendar.DAY_OF_MONTH);
+				int month=cal.get(Calendar.MONTH);
+				int year=cal.get(Calendar.YEAR);		
+				
+				openBrowser("Chrome");
+				navigate("http://www.cleartrip.com/");
+				waitUntilElementVisibility("//*[@id='ORtrip']/section[2]/div[1]/dl/dd/div/a/i");
+				//System.out.println("Waiting complete");
+				click("//*[@id='DepartDate']");
+				//System.out.println(months[month]+" "+year);
+				//System.out.println(driver.findElement(By.xpath("//*[@id='ui-datepicker-div']/div[1]/div/div")).getText());
+				while(!driver.findElement(By.xpath("//*[@id='ui-datepicker-div']/div[1]/div/div")).getText().equals(months[month]+" "+year)){
+					click("//*[@id='ui-datepicker-div']/div[2]/div/a");
+				}
+				
+				String part1 = "//*[@id='ui-datepicker-div']/div[1]/table/tbody/tr[";
+				String part2 = "]/td[";
+				String part3 = "]/a";
+				
+				for(int rowNum=1;rowNum<=5;rowNum++){
+					for(int colNum=1;colNum<=7;colNum++){				
+						try{					
+							String date = driver.findElement(By.xpath(part1+rowNum+part2+colNum+part3)).getText();
+							if(!date.equals("")){
+								int currentDay = Integer.parseInt(date);
+								if(currentDay == day)
+									driver.findElement(By.xpath(part1+rowNum+part2+colNum+part3)).click();				
+							}					
+						}catch(Exception e){
+							e.getStackTrace();	
+						}				
+					}			
+				}		
+				
+				Thread.sleep(3000L);
+
+//  *****************************  Largest and smallest from webtable *************************
+
+		/*openBrowser("Mozila");
+		navigate("file:///C:/Users/175524/Desktop/SeleniumTraining/TrainingDay/Training%20Day%206/webtable.html");
+		WebElement table = driver.findElement(By.xpath("/html/body/table"));
+		List<WebElement> rows = table.findElements(By.tagName("tr"));
+		List<Integer> number = new ArrayList<Integer>();
+		for(int r=1;r<=rows.size();r++){			
+			//System.out.println(driver.findElement(By.xpath("html/body/table/tbody/tr["+r+"]/td[3]")).getText());
+			number.add(Integer.parseInt(driver.findElement(By.xpath("html/body/table/tbody/tr["+r+"]/td[3]")).getText()));
+		}		
+		// extracting the greatest number
+		int lowest= 0;
+		for(int n=0;n<number.size();n++){
+			
+			if(n == 0)
+				lowest = number.get(n);
+			else{
+				if (lowest >  number.get(n))
+					lowest = number.get(n);
+			}							
+		}		
+		System.out.println("Lowest no is - " + lowest);		
+		
+		int greatest= 0;
+		for(int n=0;n<number.size();n++){
+			
+			if(n == 0)
+				greatest = number.get(n);
+			else{
+				if (greatest <  number.get(n))
+					greatest = number.get(n);
+			}							
+		}		
+		System.out.println("Greatest no is - " + greatest);
+		//extracting the least number
+		
+		Thread.sleep(5000L);
+		closeBrowser();*/
+
+
+//  *****************************  AUTO IT code *************************
+
+WinWaitActive("Authentication Required")
+Send("abcdef")
+Send("{TAB}")
+Send("password")
+Send("{ENTER}")
+
+// CRAFT framework download location
+http://acoetoolkit.cognizant.com/setup/FRAMEWORK
+
+
+
+
+
+
+
+
+
+
+

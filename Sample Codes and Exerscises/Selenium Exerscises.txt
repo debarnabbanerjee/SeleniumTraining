@@ -1,0 +1,68 @@
+1) Print names of all Facebook Friends. 
+
+2) Go to www.google.com and search for something.
+
+a) Print names of all result links on first page.
+b) Print names of all result links on first 5 pages
+c) Click on each and every link on first 5 pages and check if next page is opening
+
+3) Follow these steps and test functionality of a calculator:
+a) Go to www.google.com and search for 'calculator'. In the results you will see a calculator coming in the browser itself.
+b) Download this xls from here
+c) Read the Num1, Num2, Operation and ExpectedResult columns using java code
+d) Perform the operation on the calculator as described in xls file
+e) Write the value in ExpectedResult column as result of actual operation on the application
+f) Write the value in Result coulmn as Pass/Fail depending on output
+
+4) Follow these steps :
+a) Go to www.cathaypacific.com
+b) Select United states as country
+c) Try to book a ticket between 2 cities across globe by filling the details
+d) On next page all flights will be displayed
+e) You have to scan all flights and click on radio button for the most cheapest flight
+
+5) Follow these steps :
+a) Go to http://bigbasket.com/
+b) You have to add 5 different products in basket
+c) Keep the information of all 5 product names and quantities in xls file
+d) Read the product name and quantity from xls file and then add the product
+e) As soon as you add a product, basket on top right gets updated
+f) You need to check if basket is updated correctly or not(number gets incremented)
+g) Open the the basket by clickin on 'Checkout Basket'
+h) Check whether sub total is equal to addition of total prices in basket
+i) Check the product information(name and quatity) in basket with information in xls file
+
+6) Follow these steps :
+a) Go to http://bigbasket.com/
+b) Write a logic which selects 5 random products and adds them to basket
+c) Verify whether same products are added onto basket or not
+d) Keep quantity as 1... no worries :)
+
+7) Login into your gmail and open the first unread mail.
+
+8) Login into your gmail and send an email to any mail ID.
+
+9) Follow these steps :
+a) Go to www.dice.com
+b) Enter java and click on search
+c) Check if java word is reflected in each of the phrases under Job Title
+d) Do it for first 5 result pages
+
+10) Follow these steps :
+a) Go to https://developers.google.com/chart/interactive/docs/gallery/combochart
+b) You need to validate the bars in chart. c) Each bar has coffee production index. d) You need to verify that index taking into consideration the complete height of the chart e) Will have to do it on ratio-proprtion basis
+
+11) Follow these steps :
+a) Go to http://in.finance.yahoo.com/
+b) There will be a 'MARKET COMMENTARY AND LATEST BUSINESS BUZZ' in the center of the page
+c) It will have a scroll bar
+d) You need to read and print the last news in that section.
+
+12) Follow these steps :
+a) Go to http://money.rediff.com/gainers/bse
+b) There will be a list of company names and their current prices lited in the grid
+c) Find any company say 'Reliance Inds.' and then read the current share value from 'Current Price (Rs)' column
+d) Look at the top of the page, you will see a search field.
+c) Enter the same company name and search for the same company-'Reliance Inds.'
+d) Verify page with 'Reliance Inds.' details is loaded
+e) In that page verify the price is same as the once which you had read earlier from the grid
